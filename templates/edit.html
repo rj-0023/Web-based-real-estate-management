@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+  <!-- Start slider  -->
+
+
+  <!-- Start slider  -->
+  <section id="aa-slider">
+    <div class="aa-slider-area"> 
+      <!-- Top slider -->
+      <div class="aa-top-slider">
+        <!-- Top slider single slide -->
+        <div class="aa-top-slider-single">
+          <img src="{{url_for('static',filename='img/home-bg.jpg')}}" alt="img">
+                       
+<br>
+  <h3><a href=/dashboard.html><button class="aa-secondary-btn">Dashboard Home</button></a></h3>
+
+<div class="aa-contact-form text-center">
+<hr>
+  <h1> Upload a File </h1>
+
+<br>
+                <form class="contactform" action="/edit/{{post.sno}}" method="post">                  
+                  <p class="comment-form-author">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" name="name" value="{{post.name}}" size="30" required="required">
+                  </p>
+                  <br>
+
+                  <p class="comment-form-email">
+                    <label for="title">title <span class="required">*</span></label>
+                    <input type="text" name="title" value="{{post.title}}" aria-required="true" required="required">
+                  </p>
+                  <br>
+
+                  <p class="comment-form-url">
+                    <label for="status">status <span class="required">*</span></label>
+                    <input type="text" name="status" value="{{post.status}}">  
+                  </p>
+                  <br>
+
+                  <p class="comment-form-comment">
+                    <label for="content">content <span class="required">*</span></label>
+                    <textarea name="content"  aria-required="true" required="required" value="{{post.content}}"></textarea>
+                  </p>  
+                  <br>
+
+                  <p class="comment-form-url">
+                    <label for="rooms">rooms <span class="required">*</span></label>
+                    <input type="text" name="rooms" value="{{post.rooms}}">  
+                  </p>  
+                  <br>
+
+                  <p class="comment-form-url">
+                    <label for="carpet_area">carpet area <span class="required">*</span></label>
+                    <input type="text" name="carpet_area" value="{{post.carpet_area}}">  
+                  </p> 
+                  <br>
+
+                  <p class="comment-form-url">
+                    <label for="price">price <span class="required">*</span>Rs.</label>
+                    <input type="text" name="price" value="{{post.price}}">  
+                  </p> 
+                  <br>
+
+                  <p class="comment-form-url">
+                    <label for="location">location <span class="required">*</span></label>
+                    <input type="text" name="location" value="{{post.location}}">  
+                  </p> 
+                  <br>
+
+                 
+
+                  <p class="comment-form-url">
+                    <label for="category">category <span class="required">*</span></label>
+                    <input type="text" name="category" value="{{post.category}}">  
+                  </p> 
+                  <br>
+
+                  <p class="comment-form-url">
+                    <label for="slug">slug <span class="required">*</span></label>
+                    <input type="text" name="slug" value="{{post.slug}}">  
+                  </p> 
+                  <br>
+
+                  <p class="comment-form-url">
+                    <label for="features">features <span class="required">*</span></label>
+                    <input type="text" name="features" value="{{post.features}}">  
+                  </p> 
+                  <br>
+
+                  <p class="comment-form-url">
+                    <label for="img_file">image file </label>
+                    <input type="textarea " name="img_file" value="{{post.img1}}">  
+                  </p>   
+                  <br>
+           
+                  <p class="form-submit">
+                    <input type="submit" name="submit" class="aa-browse-btn" >
+                  </p>        
+                </form>
+              </div>
+ 
+
+         <!-- / Top slider content -->
+        </div>
+        <!-- / Top slider single slide -->
+      </div>
+    </div>
+  </section>
+
+  
+{% endblock %}
+  
