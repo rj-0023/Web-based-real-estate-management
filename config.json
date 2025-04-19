@@ -10,9 +10,9 @@
         "linkdin": "https://linkdin.in/homify",
         "google": "https://account.google.com/homify",
         "no_of_posts": 2,
-        "admin_user":"rj@gmail.com",
+        "admin_user":"your@gmail.com",
         "admin_password":"123456",
-        "upload_location":"F:\\rj\\nano\\Homify\\static\\img"
+        "upload_location":"static\\img"
 
     }
 }
